@@ -1,0 +1,12 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/dom4j-2.1.1.jar')
+    implementation files('libs/json-org.jar')
+    implementation files('libs/org.mozilla.javascript-1.7.2.jar')
+    implementation("com.squareup.okhttp3:okhttp:4.1.0")
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
